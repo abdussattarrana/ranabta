@@ -39,7 +39,7 @@
     <style>
         .font-manrope {
             font-family: "Manrope", sans-serif;
-        }
+        }    
     </style>
 </head>
 <body class="font-manrope">
@@ -65,11 +65,11 @@
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>About BTA</a></li>
-              <li><a>Committee</a></li>
-              <li><a>Members</a></li>
-              <li><a>News</a></li>
-              <li><a>Contact</a></li>
+              <li><a href="#about">About BTA</a></li>
+              <li><a href="#committee">Committee</a></li>
+              <li><a href="#members">Members</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
           <a href="#home" class="btn btn-ghost text-xl flex items-center gap-2">
@@ -79,11 +79,11 @@
         </div>
         <div class="navbar-end gap-2 hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>About BTA</a></li>
-            <li><a>Committee</a></li>
-            <li><a>Members</a></li>
-            <li><a>News</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#about">About BTA</a></li>
+            <li><a href="#committee">Committee</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         
@@ -100,7 +100,7 @@
       <div class="hero-content text-center">
         <div class="max-w-screen-lg">
           <h1 class="text-6xl font-bold text-[rgba(26,142,207,1)] transition duration-500 ease-in-out" data-aos="fade-up" data-aos-delay="300">
-            Empowering Teleradiology in Bangladesh
+            <span>Empowering Teleradiology in Bangladesh</span>
           </h1>
 
           <p class="py-6 text-base text-gray-500" data-aos="fade-up" data-aos-delay="400">
@@ -116,7 +116,7 @@
   </section>
 
   <!-- about us section -->
-  <section class="container mx-auto py-12" data-aos="fade-up">
+  <section id="about" class="container mx-auto py-12" data-aos="fade-up">
     <div class="relative lg:visible">
       <img class="absolute -left-10 -top-10 lg:visible" src="./assets/Vector.png" alt="" data-aos="fade-right">
     </div>
@@ -215,7 +215,7 @@
   </section>
 
   <!-- Committee Section -->
-<section class="container mx-auto py-12" data-aos="fade-up">
+<section id="committee" class="container mx-auto py-12" data-aos="fade-up">
   <div class="relative lg:visible">
     <img class="absolute -left-10 -top-10 lg:visible" src="./assets/Vector.png" alt="" data-aos="fade-right">
   </div>
@@ -328,7 +328,7 @@
 
 
   <!-- Members -->
-<section class="container mx-auto py-12 bg-barnBg" data-aos="fade-up">
+<section id="members" class="container mx-auto py-12 bg-barnBg" data-aos="fade-up">
   <div class="text-center w-full mx-auto mb-8">
     <button class="btn text-black bg-white border-0 rounded-2xl text-sm" data-aos="fade-left">
       <i class="fa-solid fa-arrow-right ml-2 rounded-full bg-black text-white p-1 justify-center"></i>
@@ -395,7 +395,7 @@
 </section>
 
  <!-- News / Event Section -->
-<section class="container mx-auto py-12 bg-gray-100" data-aos="fade-up">
+<section id="news" class="container mx-auto py-12 bg-gray-100" data-aos="fade-up">
   <div class="text-center">
     <button class="btn text-black bg-white border-0 rounded-2xl text-sm" data-aos="fade-left">
       <i class="fa-solid fa-arrow-right ml-2 rounded-full bg-black text-white p-1 justify-center"></i>News & Events
@@ -482,7 +482,7 @@
 
 
 <!-- Contact Page -->
-<section class="container mx-auto py-12 bg-gray-100" data-aos="fade-up">
+<section id="contact" class="container mx-auto py-12 bg-gray-100" data-aos="fade-up">
   <div class="text-center">
     <h1 class="text-4xl font-bold">Contact Us</h1>
     <p class="py-6 text-base text-gray-500">
@@ -526,14 +526,66 @@
 </main>
 
     <!-- footer section -->
-     <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-2">
+     <!-- <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-2">
       <div class="items-center grid-flow-col mx-auto">
         <a href="#home">
           <img class="w-4 h-4" src="./assets/logo.png" alt="BTA Logo">
         </a>
         <p>Copyright © BTA - All rights reserved</p>
       </div>
-    </footer>
+    </footer> -->
+
+    <footer class="bg-neutral text-neutral-content py-8">
+  <div class="container mx-auto px-4">
+    <!-- Footer Top Section with Links -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- About Section -->
+      <div>
+        <h2 class="text-xl font-bold text-[rgba(26,142,207,1)]">About Us</h2>
+        <p class="mt-2 text-gray-400">We are committed to providing high-quality teleradiology services across Bangladesh.</p>
+        <ul class="mt-4">
+          <li><a href="#" class="text-blue-400 hover:underline">Learn More</a></li>
+          <li><a href="#" class="text-blue-400 hover:underline">Our Mission</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div>
+        <h2 class="text-xl font-bold text-[rgba(26,142,207,1)]">Contact Us</h2>
+        <ul class="mt-2 text-gray-400">
+          <li>Email: <a href="mailto:info@bta.org" class="text-blue-400 hover:underline">info@bta.org</a></li>
+          <li>Phone: <a href="tel:+8801723457060" class="text-blue-400 hover:underline">+880 1723 457060</a></li>
+          <li>Address: Dhaka, Bangladesh</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter Signup Section -->
+      <div>
+        <h2 class="text-xl font-bold text-[rgba(26,142,207,1)]">Subscribe</h2>
+        <p class="mt-2 text-gray-400">Stay updated with the latest news and updates from BTA.</p>
+        <form action="https://formspree.io/f/mjkoyryo" method="POST" class="mt-4">
+          <input type="email" name="email" placeholder="Enter your email" class="w-full px-4 py-2 border border-gray-300 rounded-md" required />
+          <button type="submit" class="btn bg-blue-500 text-white w-full mt-2 rounded-md">Subscribe</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Developed By Section -->
+    <div class="mt-8 text-center text-gray-400">
+      <p class="text-sm sm:text-base">
+        © 2025 Bangladesh Teleradiology Association. All rights reserved.
+      </p>
+      <p class="mt-2 text-sm sm:text-base">
+        Developed by <a href="https://www.myradbd.com" target="_blank" class="text-blue-400 hover:underline">MyRad</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
 
 
 <!-- aos animation -->
