@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTA Membership Details</title>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- DaisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- aos animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            barnGreen: 'rgb(171,239,95)',
+            barnBg: 'rgb(244, 244, 244)',
+            heroArrow: 'rgb(204, 204, 255)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }    
+  </style>
+</head>
+<body class="font-manrope">
+  <!-- header section (same as index.html) -->
+  <header class="container mx-auto">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden" aria-label="Open navigation menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a href="index.html#about">About BTA</a></li>
+            <li><a href="index.html#committee">Committee</a></li>
+            <li><a href="index.html#members">Members</a></li>
+            <li><a href="index.html#news">News</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a href="index.html" class="btn btn-ghost text-xl flex items-center gap-2">
+          <img src="./assets/logo.png" alt="BTA Logo" class="w-8 h-8 rounded-full" />
+          <span class="font-bold text-[rgba(26,142,207,1)] text-sm sm:text-sm md:text-xl lg:text-2xl">
+            Bangladesh Teleradiology Association
+          </span>
+        </a>
+      </div>
+      <div class="navbar-end gap-2 hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="index.html#about">About BTA</a></li>
+          <li><a href="index.html#committee">Committee</a></li>
+          <li><a href="index.html#members">Members</a></li>
+          <li><a href="index.html#news">News</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- main section -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto py-12 text-center" data-aos="fade-up">
+      <h1 class="text-5xl font-bold text-[rgba(26,142,207,1)]">Membership Details</h1>
+      <p class="py-6 text-gray-600 max-w-2xl mx-auto">
+        Become a certified member of Bangladesh Teleradiology Association (BTA) to ensure ethical, accurate and accountable radiology reporting services.
+      </p>
+    </section>
+
+    <!-- Criteria -->
+    <section class="container mx-auto py-12 bg-barnBg rounded-xl px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center mb-8">Criteria to be a Member</h2>
+      <ul class="list-disc list-inside space-y-3 text-gray-600 text-base max-w-3xl mx-auto">
+        <li>Registered radiology companies and diagnostic centers offering teleradiology services in Bangladesh.</li>
+        <li>Directors, radiologists or professionals actively engaged in teleradiology services.</li>
+        <li>Commitment to BTA rules, ethical guidelines, and service standards.</li>
+      </ul>
+    </section>
+
+    <!-- Required Documents -->
+    <section class="container mx-auto py-12 px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center mb-8">Documents Needed for Membership</h2>
+      <ul class="list-disc list-inside space-y-3 text-gray-600 text-base max-w-3xl mx-auto">
+        <li>Completed BTA Membership Application Form.</li>
+        <li>Copy of trade license (for companies) or BMDC registration (for individuals).</li>
+        <li>Valid National ID / Passport copy.</li>
+        <li>Two recent passport-sized photographs.</li>
+      </ul>
+    </section>
+
+    <!-- Membership Fee -->
+    <section class="container mx-auto py-12 bg-barnBg rounded-xl px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center mb-8">Membership Fee</h2>
+      <p class="text-center text-gray-600 max-w-2xl mx-auto">
+        <strong>Company Membership:</strong> Tk. 25,000 (one-time registration + yearly renewal).<br>
+        <strong>Individual / Director Membership:</strong> Tk. 5,000 (one-time registration + yearly renewal).
+      </p>
+    </section>
+
+    <!-- Membership Benefits -->
+    <section class="container mx-auto py-12 px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center mb-8">Benefits of Membership</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <i class="fa-solid fa-certificate text-3xl text-blue-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Official Recognition</h3>
+          <p class="text-gray-600 text-sm">Authorized certification by BTA to operate teleradiology services in Bangladesh.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <i class="fa-solid fa-handshake text-3xl text-blue-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Collaboration & Networking</h3>
+          <p class="text-gray-600 text-sm">Opportunities to collaborate and share expertise among top professionals.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <i class="fa-solid fa-scale-balanced text-3xl text-blue-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Ethical Guidance</h3>
+          <p class="text-gray-600 text-sm">Compliance with ethical standards, ensuring trust and patient safety.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <i class="fa-solid fa-graduation-cap text-3xl text-blue-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Training & Events</h3>
+          <p class="text-gray-600 text-sm">Access to workshops, events and knowledge-sharing programs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rules -->
+    <section class="container mx-auto py-12 bg-barnBg rounded-xl px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center mb-8">Membership Rules</h2>
+      <ul class="list-disc list-inside space-y-3 text-gray-600 text-base max-w-3xl mx-auto">
+        <li>All members must follow ethical guidelines and BTA policies strictly.</li>
+        <li>Non-compliance may result in suspension or cancellation of membership.</li>
+        <li>Membership renewal is mandatory every year within the due date.</li>
+      </ul>
+    </section>
+
+    <!-- Download Forms -->
+    <section class="container mx-auto py-12 px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-center mb-8">Download Membership Forms</h2>
+      <div class="flex flex-col md:flex-row justify-center gap-6">
+        <a href="./assets/forms/Member_Company.pdf" download class="btn bg-blue-500 text-white rounded-full px-6 py-3 hover:bg-blue-600">
+          <i class="fa-solid fa-file-pdf mr-2"></i> Company Membership Form
+        </a>
+        <a href="./assets/forms/Member_Director.pdf" download class="btn bg-blue-500 text-white rounded-full px-6 py-3 hover:bg-blue-600">
+          <i class="fa-solid fa-file-pdf mr-2"></i> Director Membership Form
+        </a>
+      </div>
+    </section>
+
+    <div class="text-center mb-16">
+      <a href="index.html" class="btn bg-gray-200 text-black rounded-full px-6 py-3 hover:bg-gray-300">
+        <i class="fa-solid fa-arrow-left mr-2"></i> Back to Home
+      </a>
+    </div>
+  </main>
+
+  <!-- footer section (same as index.html) -->
+  <footer class="bg-neutral text-neutral-content py-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div>
+          <h2 class="text-xl font-bold text-[rgba(26,142,207,1)]">About Us</h2>
+          <p class="mt-2 text-gray-400">We are committed to providing high-quality teleradiology services across Bangladesh.</p>
+          <ul class="mt-4">
+            <li><a href="#" class="text-blue-400 hover:underline">Learn More</a></li>
+            <li><a href="#" class="text-blue-400 hover:underline">Our Mission</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl font-bold text-[rgba(26,142,207,1)]">Contact Us</h2>
+          <ul class="mt-2 text-gray-400">
+            <li>Email: <a href="mailto:info@bta.org" class="text-blue-400 hover:underline">info@bta.org</a></li>
+            <li>Phone: <a href="tel:+8801723457060" class="text-blue-400 hover:underline">+880 1723 457060</a></li>
+            <li>Address: Dhaka, Bangladesh</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl font-bold text-[rgba(26,142,207,1)]">Subscribe</h2>
+          <p class="mt-2 text-gray-400">Stay updated with the latest news and updates from BTA.</p>
+          <form action="https://formspree.io/f/mjkoyryo" method="POST" class="mt-4">
+            <input type="email" name="email" placeholder="Enter your email" class="w-full px-4 py-2 border border-gray-300 rounded-md" required />
+            <button type="submit" class="btn bg-blue-500 text-white w-full mt-2 rounded-md">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-400">
+        <p class="text-sm sm:text-base">© 2025 Bangladesh Teleradiology Association. All rights reserved.</p>
+        <p class="mt-2 text-sm sm:text-base">Developed by <a href="https://www.myradbd.com" target="_blank" class="text-blue-400 hover:underline">MyRad</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
